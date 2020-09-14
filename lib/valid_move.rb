@@ -14,22 +14,6 @@ def valid_move?(board, idx)
 end
 
 
-=begin def valid_move?(board, idx)
-  if idx.between?(idx[0], idx[8])
-    return true
-  elsif !idx.between?(idx[0], idx[8])
-    return false
-  end
-  
-  if position_taken?(board, idx)
-    return true
-    elsif !position_taken?(board, idx)
-    return false
-    end
-  return true
-end
-=end
-
 def position_taken?(board, idx)
   if board[idx] == " " || board[idx] == ""
     return false
